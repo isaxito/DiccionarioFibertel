@@ -13,7 +13,7 @@ int main ()
    FILE * fp;
    unsigned int dni_ini = 15000000;
    unsigned int dni_fin = 45000000;
-   unsigned int  i;
+   long int  i;
    fp = fopen ("dic.txt","w");   
    for(i = dni_ini; i < dni_fin;i++){
        fprintf (fp,"014%ld\n",i);
